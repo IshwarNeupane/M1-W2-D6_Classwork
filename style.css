@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height:100% !important;
+    width: 100% !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+#homepage-body {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(Images/homepage_image.jpg);
+}
+/*
+#about-body{
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(Images/about-scenary.jpg);
+}
+#careers-body{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(Images/services-scenary.jpg);
+}
+#contact-body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(Images/design-scenary.jpg);
+}
+#projects-body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(Images/contact-scenary.jpg);
+}
+
+nav .fas{
+    color: #fff;
+    display: none; 
+}
+.nav-fas:hover{
+    cursor: pointer;
+    color: #eb751c;
+}*/
+nav div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: .5em;
+    align-items: center;
+}
+.construction-logo img{
+    width: 8em;
+    height: 8em;
+}
+.construction-logo h2 {
+    color: rgb(232, 248, 8);
+    font-family: 'Poppins';
+    font-weight: 800;
+    margin: 0;
+    font-size: 20pt;
+}
+
+nav ul li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'poppins';
+    text-decoration: none;
+}
+nav ul li {
+    list-style: none;
+}
+
+nav ul {
+    width: 33em;
+    margin-top: 1em;
+}
+
+nav,
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+nav .search input[type=text] {
+    border: 2px solid #1ceb2d;
+    background: transparent;
+    border-top-left-radius: .5em;
+    border-bottom-left-radius: .5em;
+    color: #fff;
+    height: 2em;
+}
+
+.search input[type=text]::placeholder {
+    color: #fff;
+    font-size: 11pt;
+    padding: .3em 0 .3em .2em;
+    vertical-align: middle;
+}
+
+nav .search input[type=text]:focus {
+    border: 2px solid #ac9214;
+    outline: none;
+    background: rgba(94, 94, 94, 0.774);
+}
+
+.search {
+    height: auto;
+    display: flex;
+    padding: 1em;
+}
+
+.search button {
+    background: #f7f315;
+    padding: .5em;
+    font-size: 12pt;
+    height: 2em;
+    margin-left: -.2em;
+    border: 2px solid #7ef112;
+    color:rgb(10, 10, 10);
+}
+
+.search button:hover,
+.body-content button:hover {
+    cursor: pointer;
+    background: #09ec09cb;
+}
+nav ul li a:hover{
+    color: #4e13f1;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+.slide-show {
+    width: 800px;
+    height: 500px;
+    background: url(images/image1.jpg);
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 5s;
+    
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 40s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+  @keyframes animate{
+    25%{
+        background: url(images/image2.jpg); 
+    }
+    50%{
+        background: url(images/image3.jpg); 
+    }
+    75%{
+        background: url(images/image4.jpg); 
+    }
+    100%{
+        background: url(images/image1.jpg); 
+    }
+}
+.slide-container{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1.0em;
+    align-items: center;
+    font-family: cursive;
+    color: rgb(238, 234, 10);
+}
+.slide-container h2{
+    color: #180253;
+    font-weight: 800;
+}
+.slide-container button{
+    font-size: 12pt;
+    font-weight: 600;
+    background-color: #1ceb2d;
+    padding: .3em;
+    margin: auto;
+    border-radius: .5em;
+}
+.slide-container button a{
+    text-decoration: none;
+}
+.slide-container button:hover{
+    cursor: pointer;
+    background-color: #13941e;
+}
+.active{
+    color: #180253;
+}
+/*Tablet View for index (homepage) 700px max-height*/
+@media only screen and (max-width: 800px) {
+
+}
+/*Mobile View for index (homepage) 700px max-height*/
+@media only screen and (max-width: 600px) {
+
+}
+@media only screen and (max-width: 1000px)  {
+
+}
+@media only screen and (min-width: 1000px)  {
+
+}
+/* About page starts*/
